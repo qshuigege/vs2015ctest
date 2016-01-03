@@ -130,6 +130,10 @@ void main7() {
 
 
 void main() {
-	char str[10][30] = { "aaa", "bbb", "ccc", "111" };
-	char cArr[10][30] = { 'a', 'b', 'c', '1' };
+	//char str[4][4] = { { "aaa", "bbb", "ccc", "111" },{ "ddd","","","" },{ "","","","" },{ "","","","" } };
+	char str[4][4] = { "aaaa", "bbb", "ccc", "111" };
+	char cArr[4][4] = { 'a', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1' };
+	printf("%c", str[0][0]);
+	printf("%s", str[0]);
+
 }

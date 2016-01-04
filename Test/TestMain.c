@@ -135,6 +135,7 @@ void main() {
 	char cArr[4][4] = { 'a', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1' };
 	printf("\n%c", str[0][0]);
 	printf("\n%s", str);
+	printf("\n%s", str[0]);
 	printf("\n%s", str[1]);
 	printf("\nhello world!\n");
 

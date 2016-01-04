@@ -131,10 +131,28 @@ void main7() {
 
 void main() {
 	//char str[4][4] = { { "aaa", "bbb", "ccc", "111" },{ "ddd","","","" },{ "","","","" },{ "","","","" } };
-	char str[4][4] = { "aaaa", "bbb", "ccc", "111" };
+	char str[4][4] = { "aaaa", "bbbb", "cccc", "1111" };
 	char cArr[4][4] = { 'a', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1' };
-	printf("%c", str[0][0]);
-	printf("%s", str[0]);
-	printf("hello world!");
+	printf("\n%c", str[0][0]);
+	printf("\n%s", str);
+	printf("\n%s", str[1]);
+	printf("\nhello world!\n");
 
+	char * s1;
+	char s2[] = {'a','b'};
+	//char s2[] = "abcde";
+	//char s2[] = {"abcde"};
+	char s3[5] = "abcde";
+	char s4[5] = "aaaaa";
+	s1 = s4;
+	printf("\ns1的第0位是%c", s1[0]);
+	s1 = s2;
+	printf("\ns1的第1位是%c", s1[1]);
+	for (int i = 0; i < 3; i++)
+	{
+		printf("\n%c--%d",s2[i],i);
+	}
+
+
+	system("pause");
 }

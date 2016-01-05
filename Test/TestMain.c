@@ -79,6 +79,8 @@ void main6() {
 	//getchar();
 
 }
+
+//冒泡排序方法
 void sortStrArr(char * * strArr, int len) {
 	char * temp;
 	for (int i = 0; i < len; i++)
@@ -91,6 +93,22 @@ void sortStrArr(char * * strArr, int len) {
 				strArr[j] = temp;
 			}
 		}
+	}
+}
+
+//输出字符串数组的每一个元素
+void printStrArr(char * * arr, int len) {
+	for (int i = 0; i < len; i++)
+	{
+		printf("\n%s", arr[i]);
+	}
+}
+
+//输出字符串数组的每一个元素
+void printStrArr2(char arr[4][4], int len) {
+	for (int i = 0; i < len; i++)
+	{
+		printf("\n%s", arr[i]);
 	}
 }
 
@@ -128,16 +146,20 @@ void main7() {
 	system("pause");
 }
 
-
-void main() {
-	//char str[4][4] = { { "aaa", "bbb", "ccc", "111" },{ "ddd","","","" },{ "","","","" },{ "","","","" } };
+//字符数组表示字符串
+void main8() {
+	char * pArr[] = { "aaa", "bbb", "ccc", "111", "dddddddd" };
+	//char(*arrP)[5] = pArr;
 	char str[4][4] = { "aaaa", "bbbb", "cccc", "1111" };
+	//printStrArr(str, 4);//“函数”:“char **”与“char [4][4]”的间接级别不同
+	printStrArr2(str, 4);
 	char cArr[4][4] = { 'a', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1' };
 	printf("\n%c", str[0][0]);
 	printf("\n%s", str);
 	printf("\n%s", str[0]);
 	printf("\n%s", str[1]);
 	printf("\nhello world!\n");
+
 
 	char * s1;
 	char s2[] = {'a','b'};
@@ -154,6 +176,35 @@ void main() {
 		printf("\n%c--%d",s2[i],i);
 	}
 
+	strcpy(str[0], "fffffffff");
+	printf("\n%s", str[0]);
+	printf("\n%s", str[1]);
+	printf("\n%s", str[2]);
+	printf("\n%s", str[3]);
+
+	char * strArr[4] = {"111","222","333","444"};
+	printStrArr(strArr, 4);
+
+	system("pause");
+}
+
+//手动分配内存构造字符串数组
+void main() {
+
+	char ** arr = malloc(10 * sizeof(char *));
+	for (int i = 0; i < 10; i++)
+	{
+		arr[i] = (char *)malloc(100 * sizeof(char));
+		sprintf(arr[i], "%d%d%d", i, i, i);
+	}
+
+	printStrArr(arr, 10);
+
+	for (int i = 0; i < 10; i++)
+	{
+		free(arr[i]);
+	}
+	free(arr);
 
 	system("pause");
 }

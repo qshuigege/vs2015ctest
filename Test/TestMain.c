@@ -189,7 +189,7 @@ void main8() {
 }
 
 //手动分配内存构造字符串数组
-void main() {
+void main9() {
 
 	char ** arr = malloc(10 * sizeof(char *));
 	for (int i = 0; i < 10; i++)
@@ -205,6 +205,19 @@ void main() {
 		free(arr[i]);
 	}
 	free(arr);
+
+	system("pause");
+}
+
+void splitStr() {
+	
+}
+void main() {
+
+	char * p = "aaaaa,bbbbb,ccccc,ddddd,eeeee";
+	char arr[7] = "aaaaaaa";
+
+	printf("\n%s",p);
 
 	system("pause");
 }

@@ -215,9 +215,15 @@ void splitStr() {
 void main() {
 
 	char * p = "aaaaa,bbbbb,ccccc,ddddd,eeeee";
-	char arr[7] = "aaaaaaa";
+	char * tmp = NULL;
+	tmp = strchr(p, ',');
+	printf("\n%s", p);
+	printf("\n%s", tmp);
+	printf("\n%d", tmp - p);
 
-	printf("\n%s",p);
+	char result[1024]="\a0";
+	memcpy(result, p, tmp - p);
 
+	printf("\n%s", result);
 	system("pause");
 }

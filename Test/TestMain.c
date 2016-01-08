@@ -214,31 +214,23 @@ void splitStr() {
 }
 void main() {
 
-	char * p = "aaaaa,bbbbb,ccccc,ddddd,eeeee";
+	char * p = "aaaaa,bbbbbaw,ccccc,dddddsss,eeeee";
 	char * tmp = p;
 	char * tmp2 = p;
-	/*tmp = strchr(p, ',');
-	printf("\n%s", p);
-	printf("\n%s", tmp);
-	printf("\n%d", tmp - p);
-
-	char result[1024]="\a0";
-	memcpy(result, p, tmp - p);
-
-	printf("\n%s", result);*/
-	char result[1024];
-	char buf[1024];
-	int count;
+	char result[1024] = "\0";
 	int tmpcount;
 	do {
 		tmp = strchr(tmp2, ',');
-		tmpcount = tmp - tmp2;
-		memcpy(result, tmp2, tmpcount);
-		count = count + tmpcount;
-		tmp = tmp + 1;
-		tmp2 = tmp;
-		buf
-		printf("\n%s", result);
-	} while (tmp != NULL);
+		if (tmp != NULL) {
+			tmpcount = tmp - tmp2;
+			memcpy(result, tmp2, tmpcount);
+			tmp = tmp + 1;
+			tmp2 = tmp;
+			printf("\n%s", result);
+		}
+		else {
+			break;
+		}
+	} while (*tmp != '\0');
 	system("pause");
 }

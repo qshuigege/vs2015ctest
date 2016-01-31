@@ -237,8 +237,10 @@ void main() {
 		count = count + tmpcount;
 		tmp = tmp + 1;
 		tmp2 = tmp;
-		buf
 		printf("\n%s", result);
 	} while (tmp != NULL);
 	system("pause");
 }
+
+//Õ¯“◊” œ‰£∫"name:qschaogege@163.com pwd:asdfqwer1234 phone:15073804954"
+//12306£∫"name:qschaogege pwd:asdfqwer1234 phone:15073804954"

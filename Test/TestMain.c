@@ -244,3 +244,18 @@ void main() {
 
 //网易邮箱："name:qschaogege@163.com pwd:asdfqwer1234 phone:15073804954"
 //12306："name:qschaogege pwd:asdfqwer1234 phone:15073804954"
+
+
+//"你上小学时最喜欢的老师姓什么--朱春阳 你在学生时代最喜欢哪个电影明星或角色--朱红勋 你的第一个上司叫什么名字--陈分腾"
+//"F9FPRABVFCM8"
+
+//"广东社保"
+//"pwd:lyh348960663"
+//"phone:15507592170"
+//"mail:qshuigege@163.com"
+//"您中学英语老师姓名是？：朱红勋"
+
+//网易邮箱："name:qschaogege@163.com pwd:asdfqwer1234 phone:15073804954"
+//12306："name:qschaogege pwd:asdfqwer1234 phone:15073804954"
+
+//"广东省出入境证件数字相片采集回执"

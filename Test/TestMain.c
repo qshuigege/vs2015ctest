@@ -31,10 +31,10 @@ void main2() {
 		c = temp;
 	}
 
-	printf("ÅÅĞòºóa=%d, b=%d, c=%c", a, b, c);
+	printf("æ’åºåa=%d, b=%d, c=%c", a, b, c);
 }
 
-//´ò¿ª°Ù¶È
+//æ‰“å¼€ç™¾åº¦
 void main3() {
 	ShellExecuteA(0, "open", "https://www.baidu.com", 0, 0, 0);
 }
@@ -44,7 +44,7 @@ int add(int a, int b) {
 }
 
 void main4() {
-	//Ö¸Õëº¯Êı
+	//æŒ‡é’ˆå‡½æ•°
 	int(*p)(int a, int b);
 	p = add;
 	printf("aaaaaaa%d", p(1, 1));
@@ -80,7 +80,7 @@ void main6() {
 
 }
 
-//Ã°ÅİÅÅĞò·½·¨
+//å†’æ³¡æ’åºæ–¹æ³•
 void sortStrArr(char * * strArr, int len) {
 	char * temp;
 	for (int i = 0; i < len; i++)
@@ -96,7 +96,7 @@ void sortStrArr(char * * strArr, int len) {
 	}
 }
 
-//Êä³ö×Ö·û´®Êı×éµÄÃ¿Ò»¸öÔªËØ
+//è¾“å‡ºå­—ç¬¦ä¸²æ•°ç»„çš„æ¯ä¸€ä¸ªå…ƒç´ 
 void printStrArr(char * * arr, int len) {
 	for (int i = 0; i < len; i++)
 	{
@@ -104,7 +104,7 @@ void printStrArr(char * * arr, int len) {
 	}
 }
 
-//Êä³ö×Ö·û´®Êı×éµÄÃ¿Ò»¸öÔªËØ
+//è¾“å‡ºå­—ç¬¦ä¸²æ•°ç»„çš„æ¯ä¸€ä¸ªå…ƒç´ 
 void printStrArr2(char arr[4][4], int len) {
 	for (int i = 0; i < len; i++)
 	{
@@ -135,7 +135,7 @@ void main7() {
 
 	sortStrArr(strArr, 4);
 
-	printf("ÅÅĞòÖ®ºó£º\n");
+	printf("æ’åºä¹‹åï¼š\n");
 	for (int i = 0; i < 4; i++)
 	{
 		printf("%s\n", strArr[i]);
@@ -146,12 +146,12 @@ void main7() {
 	system("pause");
 }
 
-//×Ö·ûÊı×é±íÊ¾×Ö·û´®
+//å­—ç¬¦æ•°ç»„è¡¨ç¤ºå­—ç¬¦ä¸²
 void main8() {
 	char * pArr[] = { "aaa", "bbb", "ccc", "111", "dddddddd" };
 	//char(*arrP)[5] = pArr;
 	char str[4][4] = { "aaaa", "bbbb", "cccc", "1111" };
-	//printStrArr(str, 4);//¡°º¯Êı¡±:¡°char **¡±Óë¡°char [4][4]¡±µÄ¼ä½Ó¼¶±ğ²»Í¬
+	//printStrArr(str, 4);//â€œå‡½æ•°â€:â€œchar **â€ä¸â€œchar [4][4]â€çš„é—´æ¥çº§åˆ«ä¸åŒ
 	printStrArr2(str, 4);
 	char cArr[4][4] = { 'a', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1' };
 	printf("\n%c", str[0][0]);
@@ -168,9 +168,9 @@ void main8() {
 	char s3[5] = "abcde";
 	char s4[5] = "aaaaa";
 	s1 = s4;
-	printf("\ns1µÄµÚ0Î»ÊÇ%c", s1[0]);
+	printf("\ns1çš„ç¬¬0ä½æ˜¯%c", s1[0]);
 	s1 = s2;
-	printf("\ns1µÄµÚ1Î»ÊÇ%c", s1[1]);
+	printf("\ns1çš„ç¬¬1ä½æ˜¯%c", s1[1]);
 	for (int i = 0; i < 3; i++)
 	{
 		printf("\n%c--%d",s2[i],i);
@@ -188,7 +188,7 @@ void main8() {
 	system("pause");
 }
 
-//ÊÖ¶¯·ÖÅäÄÚ´æ¹¹Ôì×Ö·û´®Êı×é
+//æ‰‹åŠ¨åˆ†é…å†…å­˜æ„é€ å­—ç¬¦ä¸²æ•°ç»„
 void main9() {
 
 	char ** arr = malloc(10 * sizeof(char *));
@@ -242,20 +242,3 @@ void main() {
 	system("pause");
 }
 
-//ÍøÒ×ÓÊÏä£º"name:qschaogege@163.com pwd:asdfqwer1234 phone:15073804954"
-//12306£º"name:qschaogege pwd:asdfqwer1234 phone:15073804954"
-
-
-//"ÄãÉÏĞ¡Ñ§Ê±×îÏ²»¶µÄÀÏÊ¦ĞÕÊ²Ã´--Öì´ºÑô ÄãÔÚÑ§ÉúÊ±´ú×îÏ²»¶ÄÄ¸öµçÓ°Ã÷ĞÇ»ò½ÇÉ«--ÖìºìÑ« ÄãµÄµÚÒ»¸öÉÏË¾½ĞÊ²Ã´Ãû×Ö--³Â·ÖÌÚ"
-//"F9FPRABVFCM8"
-
-//"¹ã¶«Éç±£"
-//"pwd:lyh348960663"
-//"phone:15507592170"
-//"mail:qshuigege@163.com"
-//"ÄúÖĞÑ§Ó¢ÓïÀÏÊ¦ĞÕÃûÊÇ£¿£ºÖìºìÑ«"
-
-//ÍøÒ×ÓÊÏä£º"name:qschaogege@163.com pwd:asdfqwer1234 phone:15073804954"
-//12306£º"name:qschaogege pwd:asdfqwer1234 phone:15073804954"
-
-//"¹ã¶«Ê¡³öÈë¾³Ö¤¼şÊı×ÖÏàÆ¬²É¼¯»ØÖ´"

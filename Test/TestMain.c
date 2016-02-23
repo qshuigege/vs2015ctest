@@ -212,7 +212,9 @@ void main9() {
 void splitStr() {
 	
 }
-void main() {
+
+//以逗号拆分字符串
+void main10() {
 
 	char * p = "aaaaa,bbbbb,ccccc,ddddd,eeeee";
 	char * tmp = p;
@@ -228,7 +230,7 @@ void main() {
 	printf("\n%s", result);*/
 	char result[1024];
 	char buf[1024];
-	int count;
+	int count=0;
 	int tmpcount;
 	do {
 		tmp = strchr(tmp2, ',');
@@ -242,3 +244,25 @@ void main() {
 	system("pause");
 }
 
+//自定义数组类型和数组指针类型
+void main() {
+	typedef int(len5intarr)[5];
+	len5intarr myarr = { 1,1,1,1,1 };
+
+	for (int i = 0; i < 5; i++) {
+		printf("\n%d",myarr[i]);
+	}
+
+	typedef int(*plen5intarr)[5];
+	plen5intarr myP = &myarr;
+
+	for (int i = 0; i < 5; i++)
+	{
+		printf("\n%d", (*myP)[i]);
+	}
+	int arr1[5] = { 1,1,1,2,2 };
+	int arr2[5] = { 2,2,2,1,1 };
+	arr1 = arr2;
+
+	system("pause");
+}

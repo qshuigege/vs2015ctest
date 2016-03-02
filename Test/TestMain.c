@@ -31,10 +31,10 @@ void main2() {
 		c = temp;
 	}
 
-	printf("æ’åºåa=%d, b=%d, c=%c", a, b, c);
+	printf("ÅÅĞòºóa=%d, b=%d, c=%c", a, b, c);
 }
 
-//æ‰“å¼€ç™¾åº¦
+//´ò¿ª°Ù¶È
 void main3() {
 	ShellExecuteA(0, "open", "https://www.baidu.com", 0, 0, 0);
 }
@@ -44,7 +44,7 @@ int add(int a, int b) {
 }
 
 void main4() {
-	//æŒ‡é’ˆå‡½æ•°
+	//Ö¸Õëº¯Êı
 	int(*p)(int a, int b);
 	p = add;
 	printf("aaaaaaa%d", p(1, 1));
@@ -80,7 +80,7 @@ void main6() {
 
 }
 
-//å†’æ³¡æ’åºæ–¹æ³•
+//Ã°ÅİÅÅĞò·½·¨
 void sortStrArr(char * * strArr, int len) {
 	char * temp;
 	for (int i = 0; i < len; i++)
@@ -96,7 +96,7 @@ void sortStrArr(char * * strArr, int len) {
 	}
 }
 
-//è¾“å‡ºå­—ç¬¦ä¸²æ•°ç»„çš„æ¯ä¸€ä¸ªå…ƒç´ 
+//Êä³ö×Ö·û´®Êı×éµÄÃ¿Ò»¸öÔªËØ
 void printStrArr(char * * arr, int len) {
 	for (int i = 0; i < len; i++)
 	{
@@ -104,7 +104,7 @@ void printStrArr(char * * arr, int len) {
 	}
 }
 
-//è¾“å‡ºå­—ç¬¦ä¸²æ•°ç»„çš„æ¯ä¸€ä¸ªå…ƒç´ 
+//Êä³ö×Ö·û´®Êı×éµÄÃ¿Ò»¸öÔªËØ
 void printStrArr2(char arr[4][4], int len) {
 	for (int i = 0; i < len; i++)
 	{
@@ -135,7 +135,7 @@ void main7() {
 
 	sortStrArr(strArr, 4);
 
-	printf("æ’åºä¹‹åï¼š\n");
+	printf("ÅÅĞòÖ®ºó£º\n");
 	for (int i = 0; i < 4; i++)
 	{
 		printf("%s\n", strArr[i]);
@@ -146,12 +146,12 @@ void main7() {
 	system("pause");
 }
 
-//å­—ç¬¦æ•°ç»„è¡¨ç¤ºå­—ç¬¦ä¸²
+//×Ö·ûÊı×é±íÊ¾×Ö·û´®
 void main8() {
 	char * pArr[] = { "aaa", "bbb", "ccc", "111", "dddddddd" };
 	//char(*arrP)[5] = pArr;
 	char str[4][4] = { "aaaa", "bbbb", "cccc", "1111" };
-	//printStrArr(str, 4);//â€œå‡½æ•°â€:â€œchar **â€ä¸â€œchar [4][4]â€çš„é—´æ¥çº§åˆ«ä¸åŒ
+	//printStrArr(str, 4);//¡°º¯Êı¡±:¡°char **¡±Óë¡°char [4][4]¡±µÄ¼ä½Ó¼¶±ğ²»Í¬
 	printStrArr2(str, 4);
 	char cArr[4][4] = { 'a', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1', 'b', 'c', '1' };
 	printf("\n%c", str[0][0]);
@@ -168,9 +168,9 @@ void main8() {
 	char s3[5] = "abcde";
 	char s4[5] = "aaaaa";
 	s1 = s4;
-	printf("\ns1çš„ç¬¬0ä½æ˜¯%c", s1[0]);
+	printf("\ns1µÄµÚ0Î»ÊÇ%c", s1[0]);
 	s1 = s2;
-	printf("\ns1çš„ç¬¬1ä½æ˜¯%c", s1[1]);
+	printf("\ns1µÄµÚ1Î»ÊÇ%c", s1[1]);
 	for (int i = 0; i < 3; i++)
 	{
 		printf("\n%c--%d",s2[i],i);
@@ -188,7 +188,7 @@ void main8() {
 	system("pause");
 }
 
-//æ‰‹åŠ¨åˆ†é…å†…å­˜æ„é€ å­—ç¬¦ä¸²æ•°ç»„
+//ÊÖ¶¯·ÖÅäÄÚ´æ¹¹Ôì×Ö·û´®Êı×é
 void main9() {
 
 	char ** arr = malloc(10 * sizeof(char *));
@@ -213,7 +213,7 @@ void splitStr() {
 	
 }
 
-//ä»¥é€—å·æ‹†åˆ†å­—ç¬¦ä¸²
+//ÒÔ¶ººÅ²ğ·Ö×Ö·û´®
 void main10() {
 
 	char * p = "aaaaa,bbbbb,ccccc,ddddd,eeeee";
@@ -229,7 +229,7 @@ void main10() {
 
 	printf("\n%s", result);*/
 	char result[1024];
-	char buf[1024];
+	//char buf[1024];
 	int count=0;
 	int tmpcount;
 	do {
@@ -244,7 +244,7 @@ void main10() {
 	system("pause");
 }
 
-//è‡ªå®šä¹‰æ•°ç»„ç±»å‹å’Œæ•°ç»„æŒ‡é’ˆç±»å‹
+//×Ô¶¨ÒåÊı×éÀàĞÍºÍÊı×éÖ¸ÕëÀàĞÍ
 void main() {
 	typedef int(len5intarr)[5];
 	len5intarr myarr = { 1,1,1,1,1 };
@@ -260,9 +260,23 @@ void main() {
 	{
 		printf("\n%d", (*myP)[i]);
 	}
-	int arr1[5] = { 1,1,1,2,2 };
-	int arr2[5] = { 2,2,2,1,1 };
-	arr1 = arr2;
+	int erweiarr[2][3] = { {1,2,3},{11,22,33} };
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++) {
+			//printf("\n%d", erweiarr[i][j]);
+			//printf("\n%d", *(erweiarr+i));
+			printf("\n%p", *(erweiarr + i));
+			printf("\n%p", erweiarr + i);
+			printf("\n%p", erweiarr[i]);
+		}
+	}
+
+	//int sanweiarr[2][2][2] = { { { 1,1 },{ 2,2 } },{ { 3,3 },{ 4,4 } } };
+	int sanweiarr[2][3][4] = { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 };
+	printf("\n=============ÈıÎ¬Êı×é==============");
+	printf("\n%p", *(*(sanweiarr + 1) + 1));
+	printf("\n%d", *(*(*(sanweiarr + 1) + 1) + 2));
+	printf("\n%d", (*(*(sanweiarr + 1) + 1))[2] );
 
 	system("pause");
 }

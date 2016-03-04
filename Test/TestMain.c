@@ -245,7 +245,7 @@ void main10() {
 }
 
 //自定义数组类型和数组指针类型
-void main() {
+void main11() {
 	typedef int(len5intarr)[5];
 	len5intarr myarr = { 1,1,1,1,1 };
 
@@ -279,4 +279,49 @@ void main() {
 	printf("\n%d", (*(*(sanweiarr + 1) + 1))[2] );
 
 	system("pause");
+}
+
+
+void main12() {
+
+	char* str = (char*)malloc(10 * sizeof(char));
+	for (int i = 0; i < 9; i++) {
+		*(str + i) = i+97;
+	}
+	*(str + 9) = '\0';
+	printf("\n%s", str);
+
+	if (str != NULL) {
+		free(str);
+		str = NULL;
+	}
+	/*printf("\n%p",str);
+	printf("\n%p",(char*)&str);
+	printf("\n%p",str+1);*/
+	system("pause");
+}
+
+typedef struct _Student {
+	char * name;
+	int age;
+}Student;
+
+typedef struct _Teacher {
+	Student stu;
+	char * name;
+	int age;
+}Teacher;
+
+
+void main() {
+	//struct Teacher t;
+	Student stu = {.name="xiaotongxue", .age = 22 };
+	//stu.name = "xiaotongxue";
+	Teacher t;//如果没有typedef，声明变量时必须写成上行的形式
+	t.stu = stu;
+	t.name = "leslie";
+	printf("\n%s", t.name);
+	printf("\n%s", t.stu.name);
+	printf("\n%d", t.stu.age);
+
 }

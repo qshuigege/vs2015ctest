@@ -312,16 +312,37 @@ typedef struct _Teacher {
 	int age;
 }Teacher;
 
+typedef struct _Struct1 {
+	char c1;
+	char c2;
+	char name[62];
+	int  age;
+}Struct1;
+typedef struct _Struct2 {
+	char name[62];
+	int age;
+	char c1;
+	char c2;
+}Struct2;
+
 
 void main() {
-	//struct Teacher t;
 	Student stu = {.name="xiaotongxue", .age = 22 };
 	//stu.name = "xiaotongxue";
+	//struct Teacher t;
 	Teacher t;//如果没有typedef，声明变量时必须写成上行的形式
 	t.stu = stu;
 	t.name = "leslie";
 	printf("\n%s", t.name);
 	printf("\n%s", t.stu.name);
 	printf("\n%d", t.stu.age);
+	Teacher * p = NULL;
+	p = &t;
+	printf("\n%s", p->name);
+
+	Struct1 st1;
+	Struct2 st2;
+	printf("\nsizeof(st1)=%d", sizeof(st1));
+	printf("\nsizeof(st2)=%d", sizeof(st2));
 
 }

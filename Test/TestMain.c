@@ -325,6 +325,11 @@ typedef struct _Struct2 {
 	char c2;
 }Struct2;
 
+struct {
+	char name[64];
+	int age;
+}t;
+
 
 void main() {
 	Student stu = {.name="xiaotongxue", .age = 22 };
@@ -345,4 +350,19 @@ void main() {
 	printf("\nsizeof(st1)=%d", sizeof(st1));
 	printf("\nsizeof(st2)=%d", sizeof(st2));
 
+	char* str = (char*)malloc(10 * sizeof(char));
+	char* str2 = str;
+	for (int i = 0; i < 9; i++) {
+		*(str + i) = i + 97;
+	}
+	*(str + 9) = '\0';
+	printf("\n%s", str);
+	printf("\n%s", str2);
+
+	if (str != NULL) {
+		free(str);
+		str = NULL;
+	}
+	str2 = NULL;
+	printf("\n%s", str2);
 }

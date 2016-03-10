@@ -330,7 +330,6 @@ struct {
 	int age;
 }t;
 
-
 void main() {
 	Student stu = {.name="xiaotongxue", .age = 22 };
 	//stu.name = "xiaotongxue";
@@ -365,4 +364,12 @@ void main() {
 	}
 	str2 = NULL;
 	printf("\n%s", str2);
+
+	printf("\n160310========================");
+	char c;
+	//char** cp = NULL;
+	char * cp = NULL;
+	cp = &c;
+	*cp = 0x44;
+	printf("\n%x", c);
 }

@@ -330,7 +330,8 @@ struct {
 	int age;
 }t;
 
-void main() {
+//结构体测试
+void main13() {
 	Student stu = {.name="xiaotongxue", .age = 22 };
 	//stu.name = "xiaotongxue";
 	//struct Teacher t;
@@ -372,4 +373,17 @@ void main() {
 	cp = &c;
 	*cp = 0x44;
 	printf("\n%x", c);
+}
+
+
+void main() {
+	char * mystr = "aaaa12324dskfjl11bbbkdls";
+	char * rest = strstr(mystr, "dsk");
+	if (rest == NULL) {
+		printf("没找到\n");
+	}
+	else {
+		printf("找到了：%s\n", rest);
+	}
+	system("pause");
 }

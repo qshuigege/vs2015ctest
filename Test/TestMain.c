@@ -376,7 +376,7 @@ void main13() {
 }
 
 
-void main() {
+void main14() {
 	char * mystr = "aaaa12324dskfjl11bbbkdls";
 	char * rest = strstr(mystr, "dsk");
 	if (rest == NULL) {
@@ -387,3 +387,73 @@ void main() {
 	}
 	system("pause");
 }
+
+
+struct Lianbiao {
+	char name[64];
+	int age;
+	struct Lianbiao * next;
+};
+//结构体链表操作(静态链表)
+void main15() {
+
+	struct Lianbiao lb1, lb2, lb3;
+
+	lb1.age = 10;
+	lb2.age = 20;
+	lb3.age = 30;
+
+	lb1.next = &lb2;
+	lb2.next = &lb3;
+	lb3.next = NULL;
+
+	struct Lianbiao * p = &lb1;
+	while (p != NULL) {
+		printf("age:%d\n", p->age);
+		p = p->next;
+	}
+
+
+	system("pause");
+}
+
+
+typedef struct Node {
+	int index;
+	struct Node * next;
+}SList;
+SList * createSList();//创建一个链表
+void printSList(SList * p);//打印链表内容
+
+SList * createSList() {
+
+	SList * listHead=(SList *)malloc(sizeof(SList));
+	int count = 0;
+	SList * temp = listHead;
+	while (count<10) {
+		temp->next = (SList *)malloc(sizeof(SList));
+		temp->index = count;
+		temp = temp->next;
+		count++;
+	}
+	temp->next = NULL;
+
+	return listHead;
+}
+
+//动态链表
+void main() {
+	
+	SList * pt = createSList();
+	while (pt->next != NULL) {
+		printf("%d\n", pt->index);
+		pt = pt->next;
+	}
+	system("pause");
+}
+
+
+
+
+
+

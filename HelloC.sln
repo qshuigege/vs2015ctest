@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointerTest", "PointerTest\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppJiuYeBan", "CppJiuYeBan\CppJiuYeBan.vcxproj", "{337A8B71-B598-4BB2-A478-92164DCEB027}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCpp", "TestCpp\TestCpp.vcxproj", "{1256807A-0310-48B1-B4D4-4DEF96B32AE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{337A8B71-B598-4BB2-A478-92164DCEB027}.Release|x64.Build.0 = Release|x64
 		{337A8B71-B598-4BB2-A478-92164DCEB027}.Release|x86.ActiveCfg = Release|Win32
 		{337A8B71-B598-4BB2-A478-92164DCEB027}.Release|x86.Build.0 = Release|Win32
+		{1256807A-0310-48B1-B4D4-4DEF96B32AE2}.Debug|x64.ActiveCfg = Debug|x64
+		{1256807A-0310-48B1-B4D4-4DEF96B32AE2}.Debug|x64.Build.0 = Debug|x64
+		{1256807A-0310-48B1-B4D4-4DEF96B32AE2}.Debug|x86.ActiveCfg = Debug|Win32
+		{1256807A-0310-48B1-B4D4-4DEF96B32AE2}.Debug|x86.Build.0 = Debug|Win32
+		{1256807A-0310-48B1-B4D4-4DEF96B32AE2}.Release|x64.ActiveCfg = Release|x64
+		{1256807A-0310-48B1-B4D4-4DEF96B32AE2}.Release|x64.Build.0 = Release|x64
+		{1256807A-0310-48B1-B4D4-4DEF96B32AE2}.Release|x86.ActiveCfg = Release|Win32
+		{1256807A-0310-48B1-B4D4-4DEF96B32AE2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

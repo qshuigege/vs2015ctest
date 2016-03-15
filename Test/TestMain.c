@@ -443,7 +443,7 @@ SList * createSList() {
 
 //¶¯Ì¬Á´±í
 void main() {
-	
+	SList * a1 = NULL, *a2 = NULL, *a3 = NULL;
 	SList * pt = createSList();
 	while (pt->next != NULL) {
 		printf("%d\n", pt->index);

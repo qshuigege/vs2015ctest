@@ -449,6 +449,11 @@ void main() {
 		printf("%d\n", pt->index);
 		pt = pt->next;
 	}
+	const int a = 10;
+	//a = 11;
+	int * p = &a;
+	*p = 11;
+	printf("%d\n", a);
 	system("pause");
 }
 

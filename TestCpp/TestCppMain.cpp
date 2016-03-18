@@ -11,7 +11,7 @@ void testM001(Teacher t){
 	t.age = 10;
 	cout << t.age << endl;
 }
-void main() {
+void main01() {
 	//printf("hello cpp\n");
 	cout << "hello world" << endl;
 	Teacher t = { "xiaotongxue", 22 };
@@ -25,6 +25,23 @@ void main() {
 	*p = 111;
 	printf("%d\n", a);
 	printf("%d\n", *p);
+
+	system("pause");
+}
+
+
+class Circle {
+
+public: 
+	int r;
+	double s;
+};
+
+void main() {
+	Circle c;
+	c.r = 3;
+	c.s = 3.14*c.r*c.r;
+	printf("%f\n", c.s);
 
 	system("pause");
 }

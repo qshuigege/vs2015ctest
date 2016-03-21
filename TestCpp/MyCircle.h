@@ -2,7 +2,11 @@
 class MyCircle
 {
 public:
-	MyCircle();
-	~MyCircle();
+	double r;
+
+public:
+	/*MyCircle();
+	~MyCircle();*/
+	double calcArea(double r);
 };
 

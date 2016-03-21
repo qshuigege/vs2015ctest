@@ -1,4 +1,6 @@
 #include "iostream"
+#include "MyCircle.h"
+#include "MyPoint.h"
 
 using namespace std;
 
@@ -37,11 +39,21 @@ public:
 	double s;
 };
 
-void main() {
+void main02() {
 	Circle c;
 	c.r = 3;
 	c.s = 3.14*c.r*c.r;
 	printf("%f\n", c.s);
+	system("pause");
+}
+
+void main() {
+	MyCircle c;
+	MyPoint p;
+
+	c.r = 10;
+	double s = c.calcArea(c.r);
+	cout << s << endl;
 
 	system("pause");
 }

@@ -47,7 +47,7 @@ void main02() {
 	system("pause");
 }
 
-void main() {
+void main03() {
 	MyCircle c;
 	MyPoint p;
 
@@ -55,5 +55,26 @@ void main() {
 	double s = c.calcArea(c.r);
 	cout << s << endl;
 
+	system("pausee");
+}
+
+
+void testReference(int&i, int&j) {
+	i += 10;
+	j += 10;
+}
+void testReference2(int a, int b) {
+	a += 10;
+	b += 10;
+}
+void main() {
+	int i = 1;
+	int j = 2;
+	testReference(i, j);
+	cout << "i=" << i << " ,j=" << j << endl;
+	int a = 3;
+	int b = 4;
+	testReference2(a, b);
+	cout << "a=" << a << " ,b=" << b << endl;
 	system("pause");
 }
